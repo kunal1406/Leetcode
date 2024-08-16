@@ -9,7 +9,7 @@
 # apply dense rank and give ranking to the employees
 With combined as 
 (Select d.name as Department, e.name as Employee, e.salary from Employee e
-cross join Department d
+join Department d
 on e.departmentID = d.id),
 
 ranks as
