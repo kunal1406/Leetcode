@@ -12,6 +12,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0602-friend-requests-ii-who-has-the-most-friends](https://github.com/kunal1406/Leetcode/tree/master/0602-friend-requests-ii-who-has-the-most-friends) |
 | [0626-exchange-seats](https://github.com/kunal1406/Leetcode/tree/master/0626-exchange-seats) |
 | [1278-product-price-at-a-given-date](https://github.com/kunal1406/Leetcode/tree/master/1278-product-price-at-a-given-date) |
+| [1317-monthly-transactions-i](https://github.com/kunal1406/Leetcode/tree/master/1317-monthly-transactions-i) |
 | [1327-last-person-to-fit-in-the-bus](https://github.com/kunal1406/Leetcode/tree/master/1327-last-person-to-fit-in-the-bus) |
 | [1480-movie-rating](https://github.com/kunal1406/Leetcode/tree/master/1480-movie-rating) |
 | [2087-confirmation-rate](https://github.com/kunal1406/Leetcode/tree/master/2087-confirmation-rate) |
