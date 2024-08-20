@@ -15,7 +15,7 @@ from Delivery)
 
 SELECT
     ROUND(
-        100.0 * SUM(CASE WHEN order_date = customer_pref_delivery_date THEN 1 ELSE 0 END) / COUNT(*),
+        100.0 * SUM(IF( order_date = customer_pref_delivery_date, 1 , 0 )) / COUNT(*),
         2
     ) AS immediate_percentage
 FROM
