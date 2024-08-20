@@ -22,8 +22,14 @@ NextDayLogins AS (
         a.player_id
     FROM 
         Activity a
-    JOIN 
-        FirstLogins fl ON a.player_id = fl.player_id AND a.event_date = DATE_ADD(fl.first_login_date, INTERVAL 1 DAY)
+    WHERE 
+        (a.player_id, a.event_date) IN (
+            SELECT 
+                fl.player_id, 
+                DATE_ADD(fl.first_login_date, INTERVAL 1 DAY)
+            FROM 
+                FirstLogins fl
+        )
 )
 
 SELECT 
