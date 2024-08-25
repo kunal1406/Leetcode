@@ -1,18 +1,27 @@
-# Write your MySQL query statement below
+# have same tiv_2015 value
+# not located in same city
 
+WITH tiv2015_dups AS (
+    -- Identify policies that have the same tiv_2015 as at least one other policy
+    SELECT tiv_2015
+    FROM Insurance
+    GROUP BY tiv_2015
+    HAVING COUNT(*) > 1
+),
+unique_location_policies AS (
+    -- Identify policies with unique (lat, lon) combinations
+    SELECT pid, tiv_2016
+    FROM Insurance
+    GROUP BY lat, lon
+    HAVING COUNT(*) = 1
+),
+eligible_policies AS (
+    -- Select policies that meet both criteria
+    SELECT ulp.tiv_2016
+    FROM unique_location_policies ulp
+    JOIN Insurance i ON ulp.pid = i.pid
+    WHERE i.tiv_2015 IN (SELECT tiv_2015 FROM tiv2015_dups)
+)
 
-SELECT ROUND(SUM(tiv_2016), 2) as tiv_2016
-FROM
-    (SELECT tiv_2015, tiv_2016, lat, lon,
-               COUNT(*) OVER (PARTITION BY tiv_2015) AS cnt_tiv_2015,
-               COUNT(*) OVER (PARTITION BY lat, lon) AS cnt_location
-    FROM Insurance)
-    As subquery
-where cnt_tiv_2015 > 1 and cnt_location = 1
-
-
-# {"headers": ["tiv_2015", "tiv_2016", "lat", "lon", "cnt_tiv_2015", "cnt_location"],
-# "values": [[10.0, 5.0, 10.0, 10.0, 3, 1], 
-#            [10.0, 30.0, 20.0, 20.0, 3, 2], 
-#            [20.0, 20.0, 20.0, 20.0, 1, 2], 
-#            [10.0, 40.0, 40.0, 40.0, 3, 1]]}
+SELECT ROUND(SUM(tiv_2016), 2) AS tiv_2016
+FROM eligible_policies
