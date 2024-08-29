@@ -19,6 +19,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1292-immediate-food-delivery-ii](https://github.com/kunal1406/Leetcode/tree/master/1292-immediate-food-delivery-ii) |
 | [1317-monthly-transactions-i](https://github.com/kunal1406/Leetcode/tree/master/1317-monthly-transactions-i) |
 | [1327-last-person-to-fit-in-the-bus](https://github.com/kunal1406/Leetcode/tree/master/1327-last-person-to-fit-in-the-bus) |
+| [1452-restaurant-growth](https://github.com/kunal1406/Leetcode/tree/master/1452-restaurant-growth) |
 | [1480-movie-rating](https://github.com/kunal1406/Leetcode/tree/master/1480-movie-rating) |
 | [2087-confirmation-rate](https://github.com/kunal1406/Leetcode/tree/master/2087-confirmation-rate) |
 | [2127-employees-whose-manager-left-the-company](https://github.com/kunal1406/Leetcode/tree/master/2127-employees-whose-manager-left-the-company) |
