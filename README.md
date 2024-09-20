@@ -22,6 +22,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1327-last-person-to-fit-in-the-bus](https://github.com/kunal1406/Leetcode/tree/master/1327-last-person-to-fit-in-the-bus) |
 | [1452-restaurant-growth](https://github.com/kunal1406/Leetcode/tree/master/1452-restaurant-growth) |
 | [1480-movie-rating](https://github.com/kunal1406/Leetcode/tree/master/1480-movie-rating) |
+| [1509-replace-employee-id-with-the-unique-identifier](https://github.com/kunal1406/Leetcode/tree/master/1509-replace-employee-id-with-the-unique-identifier) |
 | [1882-the-number-of-employees-which-report-to-each-employee](https://github.com/kunal1406/Leetcode/tree/master/1882-the-number-of-employees-which-report-to-each-employee) |
 | [2057-count-salary-categories](https://github.com/kunal1406/Leetcode/tree/master/2057-count-salary-categories) |
 | [2087-confirmation-rate](https://github.com/kunal1406/Leetcode/tree/master/2087-confirmation-rate) |
