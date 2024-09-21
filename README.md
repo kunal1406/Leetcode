@@ -8,6 +8,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0176-second-highest-salary](https://github.com/kunal1406/Leetcode/tree/master/0176-second-highest-salary) |
 | [0185-department-top-three-salaries](https://github.com/kunal1406/Leetcode/tree/master/0185-department-top-three-salaries) |
+| [0197-rising-temperature](https://github.com/kunal1406/Leetcode/tree/master/0197-rising-temperature) |
 | [0570-managers-with-at-least-5-direct-reports](https://github.com/kunal1406/Leetcode/tree/master/0570-managers-with-at-least-5-direct-reports) |
 | [0585-investments-in-2016](https://github.com/kunal1406/Leetcode/tree/master/0585-investments-in-2016) |
 | [0596-classes-more-than-5-students](https://github.com/kunal1406/Leetcode/tree/master/0596-classes-more-than-5-students) |
